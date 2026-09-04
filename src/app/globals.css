@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+  background-color: #f9fafb;
+}
+
+/* Correction pour html2canvas / export PDF */
+*, ::before, ::after {
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+  --tw-ring-shadow: 0 0 transparent !important;
+}
