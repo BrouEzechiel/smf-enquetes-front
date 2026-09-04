@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://smf_backend:8080/api/:path*', // Docker résout ce nom en interne !
+        destination: 'http://smf-backend:8080/api/:path*', // Utilisation de smf-backend au lieu de smf_backend
       },
     ];
   },
