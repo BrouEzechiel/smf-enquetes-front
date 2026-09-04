@@ -22,7 +22,7 @@ export default function LoginPage() {
         setEnAttente(true);
 
         try {
-            const reponse = await api.post<AuthResponse>('/auth/login', {
+            const reponse = await api.post<AuthResponse>('/api/v1/auth/login', {
                 email,
                 motDePasse,
             });
