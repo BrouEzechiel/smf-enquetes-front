@@ -2,8 +2,8 @@ import axios from 'axios';
 import Cookies from 'js-cookie';
 
 const api = axios.create({
-  // Vide : les requêtes iront vers /api/... et seront redirigées par Next.js vers le backend
-  baseURL: '',
+  // Toutes les requêtes utiliseront automatiquement le préfixe /api/v1
+  baseURL: '/api/v1',
   headers: {
     'Content-Type': 'application/json',
   },
